@@ -54,8 +54,6 @@ class App extends Component {
             updateFeature={this.updateFeature}
           />
           </form>
-
-        
           <Cart 
             selected={this.state.selected}
           />
