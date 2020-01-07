@@ -45,20 +45,23 @@ class App extends Component {
           <h1>ELF Computing | Laptops</h1>
         </header>
         <main>
-        <form className="main__form">
-            <h2>Customize your laptop</h2>
-            {this.features}
-        </form>
-          <Features 
+          <form className="main__form">
+              <h2>Customize your laptop</h2>
+              {this.features}
+              <Features 
             features={this.props.features}
             selected={this.state.selected}
             updateFeature={this.updateFeature}
           />
+          </form>
+
+        
           <Cart 
             selected={this.state.selected}
           />
         </main>
       </div>
+
     )
   }
 }
